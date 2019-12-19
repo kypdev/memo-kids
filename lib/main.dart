@@ -1,0 +1,5 @@
+import 'package:flutter/material.dart';
+import 'views/my_app.dart';
+
+void main() => runApp(MaterialApp(home: MyApp(),));
+
