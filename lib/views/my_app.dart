@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:memo_kids/views/login.dart';
 
+import 'loader.dart';
+
 class MyApp extends StatefulWidget {
   @override
   _MyAppState createState() => _MyAppState();
@@ -12,13 +14,13 @@ class _MyAppState extends State<MyApp> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    new Future.delayed(
-      const Duration(seconds: 3),
-        () => Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => Login()),
-        )
-    );
+//    new Future.delayed(
+//      const Duration(seconds: 3),
+//        () => Navigator.push(
+//          context,
+//          MaterialPageRoute(builder: (context) => Login()),
+//        )
+//    );
   }
 
 
@@ -37,6 +39,10 @@ class _MyAppState extends State<MyApp> {
               fit: BoxFit.fill,
             ),
           ),
+
+          Center(
+            child: Loader(),
+          )
         ],
       ),
 

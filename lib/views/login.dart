@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:memo_kids/views/edit_profile.dart';
 import 'package:memo_kids/views/register_screen.dart';
 
 class Login extends StatefulWidget {
@@ -82,6 +83,10 @@ class _LoginState extends State<Login> {
                         ),
                         onPressed: (){
                           // todo
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => EditProfile()),
+                          );
                         },
                       ),
                     ),

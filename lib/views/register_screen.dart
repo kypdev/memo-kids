@@ -126,6 +126,9 @@ class _Register_ScreenState extends State<Register_Screen> {
                         Padding(
                           padding: const EdgeInsets.only(left: 24, right: 24),
                           child: RaisedButton(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(14.0),
+                            ),
                             color: Color(0xff3b5998),
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.center,
@@ -151,6 +154,9 @@ class _Register_ScreenState extends State<Register_Screen> {
                         Padding(
                           padding: const EdgeInsets.only(left: 24, right: 24),
                           child: RaisedButton(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(14.0),
+                            ),
                             color: Color(0xffD44638),
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.center,
@@ -180,7 +186,7 @@ class _Register_ScreenState extends State<Register_Screen> {
                 ],
               ),
             ),
-          )
+          ),
         ],
       ),
     );

@@ -1,8 +1,10 @@
 import 'dart:math';
 
-import 'package:animated_loader/home_page.dart';
+
 import 'package:flutter/material.dart';
 import 'dart:math';
+
+import 'login.dart';
 
 class Loader extends StatefulWidget {
   @override
@@ -66,7 +68,7 @@ class _LoaderState extends State<Loader> with SingleTickerProviderStateMixin {
         const Duration(seconds: 3),
             () => Navigator.push(
           context,
-          MaterialPageRoute(builder: (context) => HomePage()),
+          MaterialPageRoute(builder: (context) => Login()),
         )
     );
   }
